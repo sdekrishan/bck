@@ -11,7 +11,7 @@ const AdminVerification = (req,res,next) => {
             next()
         }
         else{
-            res.send("Please Login!")
+            res.send("Please Login ")
         }
     }
     else{
