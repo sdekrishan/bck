@@ -4,12 +4,12 @@ const jwt = require("jsonwebtoken");
 const { UserModel } = require('../models/Users.model');
 const { SpaModel } = require('../models/spa.model');
 const { HealthModel } = require('../models/health.model');
-const { AdminVerification } = require('../middlewears/Adminverficiation.middlewear');
+// const { AdminVerification } = require('../middlewears/Adminverficiation.middlewear');
 const AdminRouter = express.Router();
 AdminRouter.use(express.json());
 
 // for restaurants
-AdminRouter.use(AdminVerification)
+// AdminRouter.use(AdminVerification)
 
 AdminRouter.get("/restro",async(req,res)=>{
  try {
